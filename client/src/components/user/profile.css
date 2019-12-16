@@ -1,0 +1,213 @@
+.profile-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 140px;
+    width: 100%;
+}
+
+
+
+.user-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.settings-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    background: #3f9598;
+}
+
+.settings-link > a {
+    color: white;
+    font-weight: 400;
+}
+
+.settings-link:hover{
+    background: #225d5f;
+    cursor: pointer;
+}
+
+.profile-header, .user-header{
+    display: inline-block;
+    min-width: 200px;
+    padding: 0px 10px;
+    font-size: 24px;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.profile-tabs{
+    width: 100%;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+}
+
+.profile-tab-single {
+    display: inline-block;
+    padding: 20px;
+}
+
+.profile-tab-single:hover {
+    background: rgba(44, 117, 107, 0.068);
+    transition: 0.5s;
+    cursor: pointer;
+    user-select: none;
+}
+
+.profile-tab-single-selected {
+    font-weight: 700;
+    background: rgba(44, 117, 107, 0.185);
+
+}
+
+.profile-published{
+    text-align: center;
+    padding: 20px;
+}
+
+.user-header{
+    font-weight: 800;
+    border-top: none;
+}
+
+.recently-liked, .profile-playlist{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.liked-list, .published-list{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-row-gap: 20px;
+    width: 300px;
+    padding-bottom: 20px;
+} 
+
+.liked-list > li, .published-list > li{
+    background: green;
+    height: 300px;
+}
+
+.profile-photo-thumbnail{
+    object-fit: cover;
+    max-height: 100%;
+    width: 100%;
+}
+
+@media screen and (min-width: 1000px){
+   .published-list{
+       grid-template-columns: 33% 33% 33%;
+       column-gap: 20px;
+       width: 940px;
+   }
+
+   .profile-header, .user-header{
+        width: 80%;
+   }
+
+    .see-more-button{
+       display: none;
+   }
+
+   .liked-list {
+       display: flex;
+       justify-content: space-between;
+       overflow-x: scroll;
+       width: 960px;
+   }
+
+   .liked-list > li, .published-list > li{
+       min-width: 300px;
+       width: 300px;
+       height: 300px;
+       margin-right: 20px;
+   }
+
+   .published-list > li{
+       height: 200px;
+    display: flex;
+   }
+
+   ::-webkit-scrollbar{
+        display: block;
+        width: 5px;
+        background-color: #F5F5F5;
+    }
+
+    ::-webkit-scrollbar-track{
+        background-color: #F5F5F5;
+    }
+
+    ::-webkit-scrollbar-thumb{
+        background-color: #3f9598;
+    }
+
+}
+
+
+
+
+
+
+/* @media screen and (min-width: 768px){
+   
+} */
+
+
+.comment{
+    display: block;
+    width: 400px;
+    height: 200px;
+    background: red;
+}
+
+.art-title {
+    color: white;
+    font-weight: 700;
+}
+
+.profile-gallery-span {
+    display: block;
+    width: 100%;
+    background: inherit;
+    text-align: center;
+}
+
+.profile-gallery-span:hover {
+    text-decoration: underline;
+    color: rgb(214, 214, 214);
+    
+
+}
+.profile-art-create-link {
+  width: 120px;
+  background: #dadada;
+  color: white;
+  text-shadow:1px  black;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 2px;
+  margin-bottom: 20px;
+  padding: 10px;
+  text-align: center;
+}
+
+.profile-art-create-link:hover {
+  background: #3f9598;
+  transition: 0.5s;
+  cursor: pointer; 
+}
+

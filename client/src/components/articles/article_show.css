@@ -1,0 +1,214 @@
+.temp {
+    position: relative;
+    top: 290px;
+    text-align: center;
+}
+
+.article-show-container {
+	display: block;
+	position: relative;
+	top: 100px;
+    padding: 40px;
+    
+}
+.article-show-author{
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.article-show-author > a:hover{
+    color: gray;
+}
+.article-show-art {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.article-show-pic {
+    max-height: 300px;
+    overflow: hidden;
+}
+
+.article-show-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+		
+
+.article-show-info {
+    position: relative;
+    top: 10px;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.article-info-main {
+    display: block;
+}
+
+.article-info-1 {
+    width: 100%;
+}
+
+.article-show-title {
+    font-weight: 900;
+    font-size: 1.2rem;
+    margin: 20px 0;
+}
+
+.article-show-title-edit {
+    font-weight: 900;
+    font-size: 1.2rem;
+    resize: none;
+    white-space: pre-wrap;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+
+.article-show-body {
+    display: block;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    white-space: pre-wrap;
+    
+    -webkit-box-flex: 1;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.article-show-header-edit { 
+    resize: none;
+    white-space: pre-wrap;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+            
+.article-show-body-edit {
+   display: block;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    white-space: pre-wrap;
+    resize: none;
+    width: 100%;
+    -webkit-box-flex: 1;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px; 
+    font-family: 'Montserrat', sans-serif;
+}
+
+.article-info-2 {
+    width: 100%;
+}
+
+.article-show-likes {
+    margin: 20px 0;
+}
+	
+
+.article-info-3 {
+    width: 100%;
+}
+
+.article-show-comment {
+        margin: 20px 0;
+}
+
+.back-to-community{
+    font-size: 15px;
+    text-align: center;
+}
+
+.back-to-community:hover{
+    color: #3f9598;
+}
+
+.article-show-likes{
+    position: relative;
+    top: 0;
+    width: 90px;
+    height: 25px;
+    text-align: center;
+    padding-top: 8px;
+    color: white;
+    border-radius: 8px;
+    background: rgb(93, 93, 201);
+    margin: 20px 0;
+}
+
+.back-to-community{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+
+.edit-info-button {
+    margin-top: 10px;
+    background: black;
+    border-radius: 2px;
+    outline: none;
+    border: none;
+    color: white;
+    padding: 5px;
+    outline: white;
+    transition: all .2s;
+}
+
+.edit-info-button:hover {
+    background: #3f9598;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 800px) {
+
+	.article-show-container {
+        padding: 40px 60px;
+        max-width: 1230px;
+        margin: 0 auto;
+    }
+		
+    .article-info-main {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .article-info-1 {
+        width: 100%;
+    }
+
+    .article-show-title {
+        font-weight: 900;
+        font-size: 1.2rem;
+        margin: 20px 0;
+    }
+
+    .article-info-2 {
+        /* width: 130px; */
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .article-show-likes {
+        margin: 20px 0;
+        margin-left: 30px;
+    }
+
+    .article-show-info {
+        position: relative;
+        top: 10px;
+        display: block;
+        margin-bottom: 100px;
+    }
+
+}

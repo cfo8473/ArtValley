@@ -1,0 +1,240 @@
+.home-splash {
+  margin-top: 54px;
+  display: block;
+  position: relative;
+}
+
+.home-container{
+  display: block;
+	position: relative;
+	// top: 100px;
+  padding: 40px;
+}
+
+.home-total-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 70px;
+    width: 100%;
+}
+
+.home-splash-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.home-splash-container{
+  width: 100%;
+  display: block;
+  // margin-bottom: 100px;
+}
+
+// .home-splash-carousel-legend {
+//   position: absolute;
+//   top: 50%;
+//   left: 50%;
+//   padding: 50px;
+//   border-radius: 15px;
+//   background: rgba(255, 255, 255, 0.253);
+//   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 20px 0px;
+// }
+
+.home-splash-carousel-legend {
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  position: absolute;
+  bottom: 25%;
+  left: 25%;
+  // margin-top: 50%;
+  margin-left: 0 auto;
+  width: 50%;
+  height: 20%;
+  border-radius: 10px;
+  // background: rgb(255, 255, 255);
+  color: white;
+  text-shadow: 1px 1px 2px black;
+  padding: 10px;
+  font-size: 60px;
+  font-weight: 800;
+  text-align: center;
+  // opacity: 0.3;
+  -webkit-transition: opacity 0.35s ease-in-out;
+  -moz-transition: opacity 0.35s ease-in-out;
+  -ms-transition: opacity 0.35s ease-in-out;
+  -o-transition: opacity 0.35s ease-in-out;
+  transition: opacity 0.35s ease-in-out; 
+}
+
+
+.carousel:hover .slide .home-splash-carousel-legend {
+  opacity: .4; 
+}
+
+.home-art-teaser {
+  width: 100%
+}
+
+.home-grid {
+  display: grid;
+  grid-template-columns: repeat(11, 2fr);
+  grid-template-rows: repeat(4, 2fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px; 
+  height: 50px;
+  width: 100%;
+
+}
+
+.div1 { grid-area: 1 / 1 / 2 / 3; }
+.div2 { grid-area: 3 / 1 / 4 / 3; }
+.div3 { grid-area: 1 / 4 / 2 / 6; }
+.div4 { grid-area: 3 / 4 / 4 / 6; }
+.div5 { grid-area: 1 / 7 / 4 / 12; } 
+
+.test-grid {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background: green;
+
+}
+
+.home-grid-thumb {
+ background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.home-div-line {
+  position: relative;
+  border-top: 2px solid #3f9598;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.footer-div-line{
+  position: relative;
+  border-top: 2px solid #3f9598;
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+
+.home-header-text {
+  font-size: 36px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: sans-serif;
+}
+
+
+.home-article-index-li {
+  width: 200px;
+  height: 50px;
+}
+
+.home-index-item-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 50px;
+  width: 50px;
+  margin: 0 auto;
+  background-size: cover;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.home-article-example { 
+  display: inline-block;
+  margin: 5px;
+  padding: 5px;
+  width: 190px;
+  height: 130px;
+}
+
+.home-article-example-thumb {
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.home-article-example-thumb:hover {
+  width: 100%;
+  height: 100%;
+  opacity: 0.9;
+  box-shadow: 5px 5px 10px 0 rgba(0,0,0,.3);
+}
+
+.home-article-index-container{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    /* top: 90px; */
+    width: 100%;
+}
+
+.home-art-container {
+  display: block;
+  overflow: hidden;
+  background: inherit;
+  width: 100%;
+}
+
+span {
+  background: inherit;
+}
+
+.home-list {
+ text-align: center;
+ columns: 23%;
+}
+
+.git-links {
+  display: flex;
+  justify-content: space-between;
+  // background: #d8d8d8;
+  
+  width: 100%;
+}
+
+.git-links a:hover{
+  color: white;
+}
+
+.footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 40px;
+  // background:url('localhost:3000/GitHub-Mark-32px.png');
+}
+
+.git-kit{
+  height: 15px;
+  margin-right: 10px;
+}
+
+.git-links-container{
+  width: 500px;
+}
+
+.footer-container{
+  background: #b0b5b5;
+}
